@@ -4,5 +4,7 @@ notifications:
 julia:
   - release
   - nightly
+before_script:
+  - julia -e 'Pkg.add("AudioIO")'
 script:
   - make clean && make all
