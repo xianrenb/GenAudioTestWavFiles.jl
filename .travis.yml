@@ -1,0 +1,8 @@
+language: julia
+notifications:
+  email: false
+julia:
+  - release
+  - nightly
+script:
+  - make clean && make all
