@@ -5,6 +5,7 @@ julia:
   - release
   - nightly
 before_script:
+  - sudo julia -e 'Pkg.add("AudioIO")'
   - julia -e 'Pkg.add("AudioIO")'
 script:
   - make clean && make all
