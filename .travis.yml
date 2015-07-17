@@ -5,7 +5,7 @@ julia:
   - release
   - nightly
 before_script:
-  - sudo julia -e 'Pkg.add("AudioIO")'
+  - sudo apt-get install portaudio19-dev
   - julia -e 'Pkg.add("AudioIO")'
 script:
   - make clean && make all
