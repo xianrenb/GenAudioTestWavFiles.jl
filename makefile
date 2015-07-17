@@ -1,4 +1,4 @@
 all:
-	julia gen_audio_test_wav_files.jl
+	julia GenAudioTestWavFiles.jl
 clean:
 	rm -rf *.wav
